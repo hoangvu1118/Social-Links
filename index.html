@@ -20,13 +20,20 @@
     <h4>Ho Chi Minh City, Vietnam</h4>
 
     <div class="social-links">
-      <button class="github">GitHub</button>
-      <button class="linkedin">LinkedIn</button>
-      <button class="gmail">Gmail</button>
-      <button class="instagram">Instagram</button>
-      <button class="x">X (Twitter)</button>
-      <button class="facebook">Facebook</button>
+      <button class="social-links github" data-url="https://github.com/hoangvu1118">GitHub</button>
+      <button class="social-links linkedin" data-url="https://www.linkedin.com/in/hoangvudot1118/">LinkedIn</button>
+      <button class="social-links gmail" data-url="mailto:mhoang.vuduc@gmai.com">Gmail</button>
+      <button class="social-links instagram" data-url="https://www.instagram.com/hoang.vuu_/">Instagram</button>
+      <button class="social-links x" data-url="https://x.com/hoang_vu1118">X (Twitter)</button>
+      <button class="social-links facebook" data-url="https://www.facebook.com/hoang.vu.872243">Facebook</button>
     </div>
   </div>
+  <script>
+    document.addEventListener("click", (e) =>{
+      if(e.target.classList.contains("social-links")){
+        window.open(e.target.dataset.url,"_blank");
+      }
+    })
+  </script>
 </body>
 </html>

@@ -50,8 +50,13 @@ body{
     appearance: none;
     border: none;
     outline: none;
+    caret-color: transparent;
 }
 .social-links button:focus {
+  caret-color: transparent;
+  background: whitesmoke;
+  color: black;
+  font-weight: bold;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.18); /* subtle ring */
 }
 .avatar {
